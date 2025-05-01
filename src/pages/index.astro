@@ -1,148 +1,125 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
+
+import Personal from "@/components/Personal.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Guilherme Sousa</title>
-	</head>
-	<body class="bg-black text-neutral-400 antialised">
-		<main class="mx-auto max-w-screen-md py-12 sm:py-24 px-6">
-			<div>
-				<h1 class="text-5xl sm:text-6xl text-neutral-100">Hi.</h1>
-				<span class="text-lg sm:text-xl text-neutral-700 font-bold">인사</span>
-			</div>
+<html lang="en" class="metro">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Software Developer from Brazil." />
+    <title>Guilherme Sousa</title>
+  </head>
+  <body class="antialised">
+    <main class="mx-auto max-w-screen-md py-12 sm:py-24 px-6">
+      <div>
+        <h1 class="header-1">Hi.</h1>
+        <span class="header-span">인사</span>
+      </div>
 
-			<p class="text-lg sm:text-xl/normal mt-2 sm:mt-4">
-				I’m a 
-				<span class="text-neutral-100">
-					Software Developer from Brazil.
-				</span>
-				I'm currently working on 
-				<span class="text-neutral-100">
-					LTA Fantasy @ Fracassi Tech.
-				</span>
-				I enjoy human-machine interactions,
-				language learning, broken {"<"}<span class="text-neutral-100">div</span>{">"}
-				tags and aha moments. I still want to venture in
-				<span class="text-neutral-100">
-					Broadcast Development</span>,
-				by the way.
-			</p>
+      <p class="text-lg sm:text-xl/normal mt-2 sm:mt-4">
+        I’m a
+        <span class="highlight"> Software Developer from Brazil. </span>
+        I'm currently working on
+        <span class="highlight"> LTA Fantasy @ Fracassi Tech. </span>
+        I enjoy human-machine interactions, language learning, broken {"<"}<span
+          class="highlight">div</span
+        >{">"}
+        tags and aha moments. I still want to venture in
+        <span class="highlight"> Broadcast Development</span>, by the way.
+      </p>
 
-			<div class="mt-6 sm:mt-8">
-				<h2 class="text-3xl sm:text-4xl text-neutral-100">Work</h2>
-				<span class="text-lg sm:text-xl text-neutral-700 font-bold">업무 경험</span>
-			</div>
+      <div class="mt-6 sm:mt-8">
+        <h2 class="header-2">Work</h2>
+        <span class="header-span">업무 경험</span>
+      </div>
 
-			<div class="mt-2 sm:mt-4">
-				<h3 class="text-2xl sm:text-3xl text-neutral-100">Fracassi Tech
-					<span class="text-lg sm:text-xl text-neutral-700">2025 - Ongoing</span>
-				</h3>
+      <div class="mt-2 sm:mt-4">
+        <h3 class="work">
+          Fracassi Tech
+          <span>2025 - Ongoing</span>
+        </h3>
 
-				<p class="text-base sm:text-lg mt-2">
-				After leaving Mais Esports, I joined 
-					<a href="#" target="_href" class="text-neutral-100 underline">
-						Fracassi Tech</a> to help building 
-					<a href="https://ltafantasy.com/" target="_href" class="text-neutral-100 underline">
-						LTA Fantasy</a>, commissioned by <span class="text-neutral-100">Riot Games</span>.
-				</p>
-			</div>
+        <p class="text-base sm:text-lg mt-2">
+          After leaving Mais Esports, I joined
+          <a href="#" target="_href"> Fracassi Tech</a> to help building
+          <a href="https://ltafantasy.com/" target="_href"> LTA Fantasy</a>,
+          commissioned by <span class="highlight">Riot Games</span>.
+        </p>
+      </div>
 
-			<div class="mt-4">
-				<h3 class="text-2xl sm:text-3xl text-neutral-100">Mais Esports
-					<span class="text-lg sm:text-xl text-neutral-700">2020 - 2025</span>
-				</h3>
+      <div class="mt-4">
+        <h3 class="work">
+          Mais Esports
+          <span>2020 - 2025</span>
+        </h3>
 
-				<p class="text-base sm:text-lg mt-2">
-					I started my career as a developer on
-					<a href="https://maisesports.com.br/" target="_href" class="text-neutral-100 underline">
-						Mais Esports,
-					</a>
-					the biggest Esports portal in Brazil. I've managed to work on different projects like 
-					<a href="https://maisesports.com.br/especiais/matilha-ontem-e-sempre-titan-lol/" target="_href" class="text-neutral-100 underline">special storytelling articles</a>,
-					<a href="https://maisesports.com.br/bolao/" target="_href" class="text-neutral-100 underline">prediction minigames</a>,
-					<a href="https://maisesports.com.br/torneios/" target="_href" class="text-neutral-100 underline">tournament coverages</a>,
-					<a href="https://maisesports.com.br/stories/" target="_href" class="text-neutral-100 underline">our own Web Stories solution,</a> and even doing <span class="text-neutral-100">Korean review</a>.
-				</p>
+        <p class="text-base sm:text-lg mt-2">
+          I started my career as a developer on
+          <a href="https://maisesports.com.br/" target="_href">
+            Mais Esports,
+          </a>
+          the biggest Esports portal in Brazil. I've managed to work on different
+          projects like
+          <a
+            href="https://maisesports.com.br/especiais/matilha-ontem-e-sempre-titan-lol/"
+            target="_href">special storytelling articles</a
+          >,
+          <a href="https://maisesports.com.br/bolao/" target="_href"
+            >prediction minigames</a
+          >,
+          <a href="https://maisesports.com.br/torneios/" target="_href"
+            >tournament coverages</a
+          >,
+          <a href="https://maisesports.com.br/stories/" target="_href"
+            >our own Web Stories solution,</a
+          > and even doing <span class="highlight">Korean review</span>.
+        </p>
 
-				<p class="text-base sm:text-lg mt-2">
-				<span class="text-neutral-100 inline-block">Stack used:</span> React.js, Next.js, Strapi CMS, GraphQL, Styled Components, Tailwind CSS, AMP WebStories, Express, Typescript, Python, Redis, BetterStack, PandaScore, AWS, Heroku.
-				</p>
-			</div>
+        <p class="paragraph mt-2">
+          <span class="highlight inline-block">Stack used:</span> React.js, Next.js,
+          Strapi CMS, GraphQL, Styled Components, Tailwind CSS, AMP WebStories, Express,
+          Typescript, Python, Redis, BetterStack, PandaScore, AWS, Heroku.
+        </p>
+      </div>
 
-			<div class="mt-4">
-				<h3 class="text-2xl sm:text-3xl text-neutral-100">Freelancer
-					<span class="text-lg sm:text-xl text-neutral-700">2020 - Ongoing</span>
-				</h3>
+      <div class="mt-4">
+        <h3 class="work">
+          Freelancer
+          <span>2020 - Ongoing</span>
+        </h3>
 
-				<p class="text-base sm:text-lg mt-2">
-				I started my development career as a freelancer, and I still do some projects on my spare time.
-				I collaborated with companies and personal brands like
-				<a href="https://ltafantasy.com" target="_href" class="text-neutral-100 underline">
-					Fracassi Tech</a>, <a href="https://nicehousebr.com" target="_href" class="text-neutral-100 underline">Nice House</a>
-					and <a href="https://ruanpdias.com/" target="_href" class="text-neutral-100 underline">
-						Ruan P. Dias</a>.
-				</p>
-			</div>
+        <p class="paragraph mt-2">
+          I started my development career as a freelancer, and I still do some
+          projects on my spare time. I collaborated with companies and personal
+          brands like
+          <a href="https://ltafantasy.com" target="_href"> Fracassi Tech</a>, <a
+            href="https://nicehousebr.com"
+            target="_href">Nice House</a
+          >
+          and <a href="https://ruanpdias.com/" target="_href"> Ruan P. Dias</a>.
+        </p>
+      </div>
 
-			<div class="mt-4">
-				<h3 class="text-2xl sm:text-3xl text-neutral-100">Personal
-				</h3>
+      <Personal />
 
-				<p class="text-base sm:text-lg mt-2">
-					This is a LONG list:
-					<ul class="mt-2 flex flex-col gap-y-2">
-						<li>
-							<span class="text-neutral-100 underline">Correio Anônimo:</span> Was a free and anonymous service that let users send messages to Twitter users. It reached 10K users and more than 30K messages sent, but it was shut down back in 2022.
-						</li>
-						<li>
-							<a href="https://github.com/guilherssousa/learning-c/tree/main/projects/lispy" target="_href" class="text-neutral-100 underline">lispy:</a> A Lisp implementation written in C based on the "Build your on Lisp" book.
-						</li>
-						<li>
-							<a href="https://github.com/guilherssousa/mew-machine" target="_href" class="text-neutral-100 underline">Mew Machine:</a> I did a mock of a 90's machine made for gifting the 151th Pokémon to kids back in the day.
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/feed/update/urn:li:activity:7099558659986194432/" target="_href" class="text-neutral-100 underline">An actual Pokédex:</a> A prototype that can read your game save files and track your Pokédex progress.
-						</li>
-						<li>
-							<a href="https://sorting.guilherssousa.dev/" target="_href" class="text-neutral-100 underline">Sorting Visualizer:</a> A Svelte project that lets you visualize step-by-step sorting using different algorithms.
-						</li>
-						<li>
-							<a href="https://as-bump.vercel.app/" target="_href" class="text-neutral-100 underline">as-bump:</a> A small website that lets you create bumper images following Adult Swim looks.
-						</li>
-						<li>
-							<a href="https://github.com/guilherssousa/chip-8" target="_href" class="text-neutral-100 underline">chip-8:</a> A Chip-8 emulator written in Golang.
-						</li>
-						<li>
-							<a href="https://github.com/guilherssousa/bfg" target="_href" class="text-neutral-100 underline">bfg:</a> A brainfuck interpreter written in Golang.
-						</li>
-						<li>
-							<a href="https://vsc2wt.guilherssousa.dev/" target="_href" class="text-neutral-100 underline">vsc2wt:</a> A tool that converts VS Code themes to Windows Terminal color schemes.
-						</li>
-						<li>
-							<a href="https://hookpedia.vercel.app/" target="_href" class="text-neutral-100 underline">Hookpedia:</a> A PT/BR version of useHooks.
-						</li>
-					</ul>
-				</p>
-			</div>
+      <div class="mt-4 sm:mt-8">
+        <h2 class="header-2">Contact</h2>
+        <span class="header-span">연락</span>
+      </div>
 
-			<div class="mt-4 sm:mt-8">
-				<h2 class="text-3xl sm:text-4xl text-neutral-100">Contact</h2>
-				<span class="text-lg sm:text-xl text-neutral-700 font-bold">연락</span>
-			</div>
-
-			<p class="text-base sm:text-xl/normal mt-4">
-			Want to get in contact? Please send an email to 
-				<a href="mailto:guilherme@fracassi.tech" class="text-neutral-100 underline">
-					guilherme@fracassi.tech</a> for company work related inquires. Or, if you want to talk about doing a project together, email me at
-				<a href="mailto:guilherssousadev.contato@gmail.com" class="text-neutral-100 underline">
-					guilherssousadev.contato@gmail.com</a>.
-			</p>
-		</main>
-	</body>
+      <p class="paragraph mt-4">
+        Want to get in contact? Please send an email to
+        <a href="mailto:guilherme@fracassi.tech"> guilherme@fracassi.tech</a> for
+        company work related inquires. Or, if you want to talk about doing a project
+        together, email me at
+        <a href="mailto:guilherssousadev.contato@gmail.com">
+          guilherssousadev.contato@gmail.com</a
+        >.
+      </p>
+    </main>
+  </body>
 </html>

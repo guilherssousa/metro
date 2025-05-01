@@ -1,6 +1,58 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Helvetica Neue", "sans-serif";
+}
+
+.header-1 {
+  @apply text-5xl sm:text-6xl;
+}
+
+.header-span {
+  @apply text-lg sm:text-xl font-bold;
+}
+
+.header-2 {
+  @apply text-3xl sm:text-4xl;
+}
+
+.work {
+  @apply text-2xl sm:text-3xl;
+
+  span {
+    @apply text-lg sm:text-xl;
+  }
+}
+
+.paragraph {
+  @apply text-base sm:text-lg;
+}
+
+.metro {
+  a {
+    @apply text-neutral-100 underline;
+  }
+
+  body {
+    @apply bg-black text-neutral-400;
+  }
+
+  .header-1,
+  .header-2,
+  .highlight {
+    @apply text-neutral-100;
+  }
+
+  .header-span {
+    @apply text-neutral-700;
+  }
+
+  .work {
+    @apply text-neutral-100;
+
+    span {
+      @apply text-neutral-700;
+    }
+  }
 }
