@@ -56,3 +56,31 @@
     }
   }
 }
+
+.rose-pine {
+  a {
+    @apply text-[#ebbcba] underline;
+  }
+
+  body {
+    @apply bg-[#232136] text-[#e0def4];
+  }
+
+  .header-1,
+  .header-2,
+  .highlight {
+    @apply text-[#ebbcba];
+  }
+
+  .header-span {
+    @apply text-[#908caa];
+  }
+
+  .work {
+    @apply text-[#ebbcba];
+
+    span {
+      @apply text-[#908caa];
+    }
+  }
+}
