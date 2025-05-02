@@ -1,1 +1,65 @@
-<section></section>
+---
+const themes = [
+  {
+    id: "metro",
+    name: "Metro",
+  },
+  {
+    id: "rose-pine",
+    name: "Rose Pine",
+  },
+];
+---
+
+<script>
+  let currentTheme = "metro";
+
+  function changeTheme(themeId: string) {
+    document.documentElement.classList.remove(currentTheme);
+    document.documentElement.classList.add(themeId);
+    currentTheme = themeId;
+  }
+
+  document.querySelectorAll("#theme-switcher button")?.forEach((e) => {
+    e.addEventListener("click", () => {
+      const themeId = (e as HTMLButtonElement).dataset.themeId;
+      console.log(themeId);
+      if (!themeId) return;
+      if (themeId === currentTheme) return;
+
+      changeTheme(themeId);
+    });
+  });
+</script>
+
+<section
+  data-open="false"
+  class="fixed z-20 hidden data-[open=true]:block bottom-0 left-0 w-full bg-neutral-900 text-neutral-300"
+>
+  <div class="mx-auto max-w-screen-md px-6 py-4">
+    <div class="flex items-center justify-between">
+      <h1>Theme Switcher</h1>
+      <button
+        onclick="document.querySelector('[data-open=true]').dataset.open=false"
+        class="bg-neutral-800 px-2 py-1 rounded-md border border-zinc-900"
+        >Close</button
+      >
+    </div>
+
+    <div class="flex flex-col gap-y-3 mt-4" id="theme-switcher">
+      {
+        themes.map((theme) => (
+          <button
+            data-theme-id={theme.id}
+            class:list={[
+              "flex border rounded-sm px-4 py-3 preview-button",
+              theme.id,
+            ]}
+          >
+            <span>{theme.name}</span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+</section>

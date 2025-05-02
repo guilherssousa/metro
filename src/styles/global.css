@@ -84,3 +84,11 @@
     }
   }
 }
+
+.metro.preview-button {
+  @apply bg-black text-white border-neutral-800;
+}
+
+.rose-pine.preview-button {
+  @apply bg-[#232136] text-[#e0def4] border-[#393552];
+}

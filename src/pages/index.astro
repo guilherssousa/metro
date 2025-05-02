@@ -5,7 +5,7 @@ import ThemeSwitcher from "@/components/theme-switcher.astro";
 import Personal from "@/components/personal.astro";
 ---
 
-<html lang="en" class="rose-pine">
+<html lang="en" class="metro">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -28,7 +28,11 @@ import Personal from "@/components/personal.astro";
           <span class="highlight"> LTA Fantasy @ Fracassi Tech. </span>
           I enjoy human-machine interactions, language learning, broken {
             "<"
-          }<span class="highlight">div</span>{">"}
+          }<span
+            class="highlight"
+            onclick="document.querySelector('[data-open=false]').dataset.open=true"
+            >div</span
+          >{">"}
           tags and aha moments. I still want to venture in
           <span class="highlight"> Broadcast Development</span>, by the way.
         </p>
