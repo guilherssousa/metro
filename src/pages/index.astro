@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
 
-import Personal from "@/components/Personal.astro";
+import ThemeSwitcher from "@/components/theme-switcher.astro";
+import Personal from "@/components/personal.astro";
 ---
 
 <html lang="en" class="rose-pine">
@@ -14,112 +15,117 @@ import Personal from "@/components/Personal.astro";
     <title>Guilherme Sousa</title>
   </head>
   <body class="antialised">
+    <ThemeSwitcher />
     <main class="mx-auto max-w-screen-md py-12 sm:py-24 px-6">
-      <div>
+      <section>
         <h1 class="header-1">Hi.</h1>
         <span class="header-span">인사</span>
-      </div>
 
-      <p class="text-lg sm:text-xl/normal mt-2 sm:mt-4">
-        I’m a
-        <span class="highlight"> Software Developer from Brazil. </span>
-        I'm currently working on
-        <span class="highlight"> LTA Fantasy @ Fracassi Tech. </span>
-        I enjoy human-machine interactions, language learning, broken {"<"}<span
-          class="highlight">div</span
-        >{">"}
-        tags and aha moments. I still want to venture in
-        <span class="highlight"> Broadcast Development</span>, by the way.
-      </p>
-
-      <div class="mt-6 sm:mt-8">
-        <h2 class="header-2">Work</h2>
-        <span class="header-span">업무 경험</span>
-      </div>
-
-      <div class="mt-2 sm:mt-4">
-        <h3 class="work">
-          Fracassi Tech
-          <span>2025 - Ongoing</span>
-        </h3>
-
-        <p class="text-base sm:text-lg mt-2">
-          After leaving Mais Esports, I joined
-          <a href="#" target="_href"> Fracassi Tech</a> to help building
-          <a href="https://ltafantasy.com/" target="_href"> LTA Fantasy</a>,
-          commissioned by <span class="highlight">Riot Games</span>.
+        <p class="text-lg sm:text-xl/normal mt-2 sm:mt-4">
+          I’m a
+          <span class="highlight"> Software Developer from Brazil. </span>
+          I'm currently working on
+          <span class="highlight"> LTA Fantasy @ Fracassi Tech. </span>
+          I enjoy human-machine interactions, language learning, broken {
+            "<"
+          }<span class="highlight">div</span>{">"}
+          tags and aha moments. I still want to venture in
+          <span class="highlight"> Broadcast Development</span>, by the way.
         </p>
-      </div>
+      </section>
 
-      <div class="mt-4">
-        <h3 class="work">
-          Mais Esports
-          <span>2020 - 2025</span>
-        </h3>
+      <section>
+        <div class="mt-6 sm:mt-8">
+          <h2 class="header-2">Work</h2>
+          <span class="header-span">업무 경험</span>
+        </div>
 
-        <p class="text-base sm:text-lg mt-2">
-          I started my career as a developer on
-          <a href="https://maisesports.com.br/" target="_href">
-            Mais Esports,
-          </a>
-          the biggest Esports portal in Brazil. I've managed to work on different
-          projects like
-          <a
-            href="https://maisesports.com.br/especiais/matilha-ontem-e-sempre-titan-lol/"
-            target="_href">special storytelling articles</a
-          >,
-          <a href="https://maisesports.com.br/bolao/" target="_href"
-            >prediction minigames</a
-          >,
-          <a href="https://maisesports.com.br/torneios/" target="_href"
-            >tournament coverages</a
-          >,
-          <a href="https://maisesports.com.br/stories/" target="_href"
-            >our own Web Stories solution,</a
-          > and even doing <span class="highlight">Korean review</span>.
-        </p>
+        <div class="mt-2 sm:mt-4">
+          <h3 class="work">
+            Fracassi Tech
+            <span>2025 - Ongoing</span>
+          </h3>
 
-        <p class="paragraph mt-2">
-          <span class="highlight inline-block">Stack used:</span> React.js, Next.js,
-          Strapi CMS, GraphQL, Styled Components, Tailwind CSS, AMP WebStories, Express,
-          Typescript, Python, Redis, BetterStack, PandaScore, AWS, Heroku.
-        </p>
-      </div>
+          <p class="text-base sm:text-lg mt-2">
+            After leaving Mais Esports, I joined
+            <a href="#" target="_href"> Fracassi Tech</a> to help building
+            <a href="https://ltafantasy.com/" target="_href"> LTA Fantasy</a>,
+            commissioned by <span class="highlight">Riot Games</span>.
+          </p>
+        </div>
 
-      <div class="mt-4">
-        <h3 class="work">
-          Freelancer
-          <span>2020 - Ongoing</span>
-        </h3>
+        <div class="mt-4">
+          <h3 class="work">
+            Mais Esports
+            <span>2020 - 2025</span>
+          </h3>
 
-        <p class="paragraph mt-2">
-          I started my development career as a freelancer, and I still do some
-          projects on my spare time. I collaborated with companies and personal
-          brands like
-          <a href="https://ltafantasy.com" target="_href"> Fracassi Tech</a>, <a
-            href="https://nicehousebr.com"
-            target="_href">Nice House</a
-          >
-          and <a href="https://ruanpdias.com/" target="_href"> Ruan P. Dias</a>.
-        </p>
-      </div>
+          <p class="text-base sm:text-lg mt-2">
+            I started my career as a developer on
+            <a href="https://maisesports.com.br/" target="_href">
+              Mais Esports,
+            </a>
+            the biggest Esports portal in Brazil. I've managed to work on different
+            projects like
+            <a
+              href="https://maisesports.com.br/especiais/matilha-ontem-e-sempre-titan-lol/"
+              target="_href">special storytelling articles</a
+            >,
+            <a href="https://maisesports.com.br/bolao/" target="_href"
+              >prediction minigames</a
+            >,
+            <a href="https://maisesports.com.br/torneios/" target="_href"
+              >tournament coverages</a
+            >,
+            <a href="https://maisesports.com.br/stories/" target="_href"
+              >our own Web Stories solution,</a
+            > and even doing <span class="highlight">Korean review</span>.
+          </p>
+
+          <p class="paragraph mt-2">
+            <span class="highlight inline-block">Stack used:</span> React.js, Next.js,
+            Strapi CMS, GraphQL, Styled Components, Tailwind CSS, AMP WebStories,
+            Express, Typescript, Python, Redis, BetterStack, PandaScore, AWS, Heroku.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <h3 class="work">
+            Freelancer
+            <span>2020 - Ongoing</span>
+          </h3>
+
+          <p class="paragraph mt-2">
+            I started my development career as a freelancer, and I still do some
+            projects on my spare time. I collaborated with companies and
+            personal brands like
+            <a href="https://ltafantasy.com" target="_href"> Fracassi Tech</a>, <a
+              href="https://nicehousebr.com"
+              target="_href">Nice House</a
+            >
+            and <a href="https://ruanpdias.com/" target="_href">
+              Ruan P. Dias</a
+            >.
+          </p>
+        </div>
+      </section>
 
       <Personal />
 
-      <div class="mt-4 sm:mt-8">
+      <section class="mt-4 sm:mt-8">
         <h2 class="header-2">Contact</h2>
         <span class="header-span">연락</span>
-      </div>
 
-      <p class="paragraph mt-4">
-        Want to get in contact? Please send an email to
-        <a href="mailto:guilherme@fracassi.tech"> guilherme@fracassi.tech</a> for
-        company work related inquires. Or, if you want to talk about doing a project
-        together, email me at
-        <a href="mailto:guilherssousadev.contato@gmail.com">
-          guilherssousadev.contato@gmail.com</a
-        >.
-      </p>
+        <p class="paragraph mt-4">
+          Want to get in contact? Please send an email to
+          <a href="mailto:guilherme@fracassi.tech"> guilherme@fracassi.tech</a> for
+          company work related inquires. Or, if you want to talk about doing a project
+          together, email me at
+          <a href="mailto:guilherssousadev.contato@gmail.com">
+            guilherssousadev.contato@gmail.com</a
+          >.
+        </p>
+      </section>
     </main>
   </body>
 </html>
